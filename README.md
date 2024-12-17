@@ -5,8 +5,9 @@ Matlab scripts to convert an amount of samples from a .wav file to raw data file
 # Samples_to_raw
 - Extracting sample values from wav file to raw data file:
 - Input arguments: samples_to_raw(input_file_name, num_samples_to_extract, output_file_name)
-- The output file is automatically created,
+- The output file is automatically created, and saved in current folder.
 - Example input: samples_to_txt("test.wav", 500, "test.txt")
+- The wav file should be located in the same folder as the script.
   ## --- NOTE ---
   Only even values are valid to be written in the output file, if a odd number is passed as argument the output array will contain the number-1. 
   
