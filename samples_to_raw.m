@@ -1,8 +1,8 @@
 function samples_to_raw(finput,snum,fout)
 
 % Extracting wav file samples to a txt file
-% Input arguments: extract_samples_to_txt(input_file_name, samples_to_extract, output_file_to_write)
-% The output file is automatically created, ex: "test.wav", 500, "test.txt"
+% Input arguments: samples_to_raw(input_file_name, num_samples_to_extract, output_file_name)
+% The output file is automatically created, example: "test.wav", 500, "test.txt"
 % *** Warning *** 
 % The output saves only even amount of values, odd sample inputs
 % will be rounded to the closest lower even value.
