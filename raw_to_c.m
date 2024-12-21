@@ -1,7 +1,10 @@
 function raw_to_c(input_file,output_file)
 
-% Converting txt file with input values into C file formatted in double array
-%   -Input 
+%  Converting a raw data file into a C file with a formatted double array variable
+% Input arguments: raw_to_c(input_file_name, output_file_name)
+% The output file is automatically created, ex: "test.txt"/"text.dat", "test.c"
+% Example output file structure: double *your-output-file-name* [arr_elements_count] { *array_val1, array_val2, ... array_valN }
+
 data = readmatrix(input_file);
 fid = fopen(output_file, 'w');
 
