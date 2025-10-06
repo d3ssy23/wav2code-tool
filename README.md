@@ -18,3 +18,13 @@ Matlab scripts to convert an amount of samples from a .wav file to raw data file
 - The output file is automatically created,
 -  Example input: raw_to_c("test.txt","test.c")
 -   Example structure of the output file: double test[500] = { //values };
+
+  #  Why it’s useful
+
+Embedded systems / microcontrollers: Often you can’t read a .wav file directly on a microcontroller. You need the samples in a C array to play or analyze audio.
+
+DSP experiments: Quick way to test audio processing algorithms without relying on external files.
+
+Data portability: Converts audio into a format that can be compiled directly in C projects.
+
+Automation: If you do this manually, it’s tedious to convert hundreds of samples into proper C arrays — your scripts automate it.
